@@ -1,0 +1,33 @@
+User
+
+UserID (unique)
+Name
+Username
+Email
+PhoneNo
+Password
+Role (Array)
+
+
+Wholesaler 
+
+WholesalerID (unique)
+User (User)
+Product (Product (Array))
+
+
+Store
+
+User (User)
+StoreID (unique)
+StoreName 
+Products (Product (Array))
+
+
+Product 
+
+ProductID (unique)
+ProductName 
+IsAvailable (boolean)
+Price (number)
+Quantity (number)
