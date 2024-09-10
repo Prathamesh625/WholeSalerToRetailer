@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import asyncHandler from '../middlewares/asyncHandler.js'; 4
-import User from '../models/user.modal.js';
+import User from '../models/user.model.js';
 import AppError from '../middlewares/AppError.js';
 // Controller to get all users
 export const getUsers = asyncHandler(async (req: Request, res: Response) => {

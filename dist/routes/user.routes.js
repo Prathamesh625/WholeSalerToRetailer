@@ -2,6 +2,8 @@ import express from 'express';
 import { getUsers, getUserById, createUser, updateUser, deleteUser, } from '../controllers/user.controller.js'; // Adjust the path to your userController
 const router = express.Router();
 // Define routes
+
+router.use('')
 router.route('/').get(getUsers).post(createUser);
 router.route('/:id').get(getUserById).put(updateUser).delete(deleteUser);
 export default router;
